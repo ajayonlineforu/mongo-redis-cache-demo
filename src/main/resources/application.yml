@@ -1,0 +1,18 @@
+spring:
+  redis:
+    database: 0
+    host: localhost
+    password:
+    port: 6379
+  cache:
+    type: redis
+    redis:
+      #key-prefix: 'api::'
+      # value in milliseconds
+      time-to-live: 12000000
+
+logging:
+  level:
+    org:
+      springframework:
+        cache: TRACE
